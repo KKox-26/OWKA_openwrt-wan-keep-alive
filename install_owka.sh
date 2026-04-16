@@ -3,7 +3,7 @@
 
 DIR=/usr/openwrt-wan-keep-alive
 #Check if ncat is installed
-NCAT_INSTALLED=$(apk info -e zlib && echo installed)
+NCAT_INSTALLED=$(apk info -e ncat && echo installed)
 
 echo ""
 echo "##### OpenWRT wan-keep-alive #####"
