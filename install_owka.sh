@@ -28,7 +28,7 @@ download_files()
 	DIR=/usr/openwrt-wan-keep-alive
 	mkdir $DIR
  	touch $DIR/log.txt
-  	echo "Downloading files from https://raw.githubusercontent.com/Norde/openwrt-wan-keep-alive/master ..."
+  	echo "Downloading files from https://raw.githubusercontent.com/KKox-26/OWKA_openwrt-wan-keep-alive/master ..."
    	wget -q --show-progress --no-check-certificate --no-cache https://raw.githubusercontent.com/KKox-26/OWKA_openwrt-wan-keep-alive/master/dns-test.sh -O $DIR/dns-test.sh && chmod +x $DIR/dns-test.sh
  	wget -q --show-progress --no-check-certificate --no-cache https://raw.githubusercontent.com/KKox-26/OWKA_openwrt-wan-keep-alive/master/wan-keep-alive.sh -O $DIR/wan-keep-alive.sh && chmod +x $DIR/wan-keep-alive.sh
  	wget -q --show-progress --no-check-certificate --no-cache https://raw.githubusercontent.com/KKox-26/OWKA_openwrt-wan-keep-alive/master/restart-interface.sh -O $DIR/restart-interface.sh && chmod +x $DIR/restart-interface.sh
